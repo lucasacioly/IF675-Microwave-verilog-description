@@ -1,0 +1,263 @@
+$date
+	Sun Dec 19 05:41:02 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module magnetron_control_tb $end
+$var wire 1 ! Q_TB $end
+$var reg 1 " clearn_TB $end
+$var reg 1 # door_closed_TB $end
+$var reg 1 $ startn_TB $end
+$var reg 1 % stopn_TB $end
+$var reg 1 & timer_done_TB $end
+$scope module DUT $end
+$var wire 1 ! Q $end
+$var wire 1 ' clearn $end
+$var wire 1 ( door_closed $end
+$var wire 1 ) r $end
+$var wire 1 * s $end
+$var wire 1 + startn $end
+$var wire 1 , stopn $end
+$var wire 1 - timer_done $end
+$scope module L1 $end
+$var wire 1 ' clearn $end
+$var wire 1 ( door_closed $end
+$var wire 1 + startn $end
+$var wire 1 , stopn $end
+$var wire 1 - timer_done $end
+$var reg 1 . r $end
+$var reg 1 / s $end
+$upscope $end
+$scope module L2 $end
+$var wire 1 ) R $end
+$var wire 1 * S $end
+$var reg 1 0 Q $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+00
+0/
+1.
+1-
+1,
+1+
+0*
+1)
+0(
+1'
+1&
+1%
+1$
+0#
+1"
+0!
+$end
+#10000000
+10
+1!
+0.
+0)
+1/
+1*
+0&
+0-
+0$
+0+
+1#
+1(
+#11000000
+0/
+0*
+1$
+1+
+#41000000
+00
+0!
+1.
+1)
+1&
+1-
+#51000000
+0#
+0(
+#61000000
+10
+1!
+0.
+0)
+1/
+1*
+0&
+0-
+0$
+0+
+1#
+1(
+#62000000
+0/
+0*
+1$
+1+
+#77000000
+00
+0!
+1.
+1)
+0#
+0(
+#87000000
+1&
+1-
+#97000000
+10
+1!
+0.
+0)
+1/
+1*
+0&
+0-
+0$
+0+
+1#
+1(
+#98000000
+0/
+0*
+1$
+1+
+#113000000
+00
+0!
+1.
+1)
+0%
+0,
+#114000000
+0.
+0)
+1%
+1,
+#124000000
+1.
+1)
+1&
+1-
+0#
+0(
+#134000000
+10
+1!
+0.
+0)
+1/
+1*
+0&
+0-
+0$
+0+
+1#
+1(
+#135000000
+0/
+0*
+1$
+1+
+#150000000
+00
+0!
+1.
+1)
+0"
+0'
+#151000000
+0.
+0)
+1"
+1'
+#161000000
+1.
+1)
+1&
+1-
+0#
+0(
+#171000000
+0&
+0-
+0"
+0'
+0%
+0,
+0$
+0+
+#181000000
+1&
+1-
+#191000000
+0&
+0-
+1#
+1(
+#201000000
+1&
+1-
+#211000000
+0&
+0-
+0#
+0(
+1"
+1'
+#221000000
+1&
+1-
+#231000000
+0&
+0-
+1#
+1(
+#241000000
+1&
+1-
+#251000000
+0&
+0-
+0#
+0(
+0"
+0'
+1%
+1,
+#261000000
+1&
+1-
+#271000000
+0&
+0-
+1#
+1(
+#281000000
+1&
+1-
+#291000000
+0&
+0-
+0#
+0(
+1"
+1'
+#301000000
+1&
+1-
+#311000000
+1#
+1(
+#321000000

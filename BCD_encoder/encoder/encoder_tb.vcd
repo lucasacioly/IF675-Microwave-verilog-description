@@ -1,0 +1,122 @@
+$date
+	Wed Nov 24 09:17:16 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module encoder_tb $end
+$var wire 4 ! D_tb [3:0] $end
+$var wire 1 " loadn_tb $end
+$var reg 1 # en_tb $end
+$var reg 10 $ keypad_tb [9:0] $end
+$scope module DUT $end
+$var wire 1 % en $end
+$var wire 10 & keys [9:0] $end
+$var reg 4 ' D [3:0] $end
+$var reg 1 ( loadn $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0(
+b0 '
+b0 &
+1%
+b0 $
+1#
+0"
+b0 !
+$end
+#10
+b1110 $
+b1110 &
+#20
+b1000000 $
+b1000000 &
+#30
+b100 $
+b100 &
+#40
+b101010101 $
+b101010101 &
+#50
+b1001000101 $
+b1001000101 &
+#60
+b111000000 $
+b111000000 &
+#70
+b0 $
+b0 &
+0#
+0%
+#80
+b11 $
+b11 &
+#90
+b1000100001 $
+b1000100001 &
+#100
+b10000011 $
+b10000011 &
+#110
+b1000001111 $
+b1000001111 &
+#120
+b1111111111 $
+b1111111111 &
+#130
+1(
+1"
+b1 $
+b1 &
+#140
+b1 '
+b1 !
+b10 $
+b10 &
+#150
+b10 '
+b10 !
+b100 $
+b100 &
+#160
+b11 '
+b11 !
+b1000 $
+b1000 &
+#170
+b100 '
+b100 !
+b10000 $
+b10000 &
+#180
+b101 '
+b101 !
+b100000 $
+b100000 &
+#190
+b110 '
+b110 !
+b1000000 $
+b1000000 &
+#200
+b111 '
+b111 !
+b10000000 $
+b10000000 &
+#210
+b1000 '
+b1000 !
+b100000000 $
+b100000000 &
+#220
+b1001 '
+b1001 !
+b1000000000 $
+b1000000000 &
+#230

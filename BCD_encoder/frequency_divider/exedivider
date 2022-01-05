@@ -1,0 +1,77 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision - 3;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_008B9570 .scope module, "fdivider_tb" "fdivider_tb" 2 4;
+ .timescale -3 -3;
+v008BA350_0 .var "clk_in_tb", 0 0;
+v008BA3A8_0 .net "clk_out_tb", 0 0, L_0092DE48; 1 drivers
+v0092E210_0 .var/i "i", 31 0;
+S_008B9680 .scope module, "DUT" "fdivider" 2 13, 3 1, S_008B9570;
+ .timescale -3 -3;
+v008B9058_0 .net *"_s0", 7 0, L_0092E0B0; 1 drivers
+v008BEF48_0 .net/s *"_s10", 0 0, C4<1>; 1 drivers
+v008B4228_0 .net *"_s3", 0 0, C4<0>; 1 drivers
+v008B4280_0 .net *"_s4", 7 0, C4<00110010>; 1 drivers
+v008B42D8_0 .net *"_s6", 0 0, L_0092E000; 1 drivers
+v008B1608_0 .net/s *"_s8", 0 0, C4<0>; 1 drivers
+v008B1660_0 .net "clk_in", 0 0, v008BA350_0; 1 drivers
+v008B16B8_0 .alias "clk_out", 0 0, v008BA3A8_0;
+v008B1710_0 .var "counter", 6 0;
+E_008B7B18 .event posedge, v008B1660_0;
+L_0092E0B0 .concat [ 7 1 0 0], v008B1710_0, C4<0>;
+L_0092E000 .cmp/gt 8, C4<00110010>, L_0092E0B0;
+L_0092DE48 .functor MUXZ 1, C4<1>, C4<0>, L_0092E000, C4<>;
+    .scope S_008B9680;
+T_0 ;
+    %set/v v008B1710_0, 0, 7;
+    %end;
+    .thread T_0;
+    .scope S_008B9680;
+T_1 ;
+    %wait E_008B7B18;
+    %load/v 8, v008B1710_0, 7;
+    %mov 15, 0, 25;
+    %addi 8, 1, 32;
+    %ix/load 0, 7, 0;
+    %assign/v0 v008B1710_0, 0, 8;
+    %movi 8, 99, 9;
+    %load/v 17, v008B1710_0, 7;
+    %mov 24, 0, 2;
+    %cmp/u 8, 17, 9;
+    %or 5, 4, 1;
+    %jmp/0xz  T_1.0, 5;
+    %ix/load 0, 7, 0;
+    %assign/v0 v008B1710_0, 0, 0;
+T_1.0 ;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_008B9570;
+T_2 ;
+    %vpi_call 2 19 "$dumpfile", "fdivider_tb.vcd";
+    %vpi_call 2 20 "$dumpvars", 1'sb0, S_008B9570;
+    %set/v v008BA350_0, 0, 1;
+    %set/v v0092E210_0, 0, 32;
+T_2.0 ;
+    %load/v 8, v0092E210_0, 32;
+   %cmpi/s 8, 1001, 32;
+    %jmp/0xz T_2.1, 5;
+    %delay 5, 0;
+    %load/v 8, v008BA350_0, 1;
+    %inv 8, 1;
+    %set/v v008BA350_0, 8, 1;
+    %ix/load 0, 1, 0;
+    %load/vp0/s 8, v0092E210_0, 32;
+    %set/v v0092E210_0, 8, 32;
+    %jmp T_2.0;
+T_2.1 ;
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "fdivider_tb.v";
+    "./fdivider.v";
